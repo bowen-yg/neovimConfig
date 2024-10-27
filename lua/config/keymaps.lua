@@ -17,9 +17,12 @@ keymap.set("n", "<leader>ac", "<C-w>s") -- 垂直新增窗口
 -- 取消高亮
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- 切换buffer
---keymap.set("n", "<C-L>", ":bnext<CR>")
---keymap.set("n", "<C-H>", ":bprevious<CR>")
---
+keymap.set("n", "L", ":bnext<CR>")
+keymap.set("n", "H", ":bprevious<CR>")
+--telescope设置
+--local builtin=require('telescope.builtin')
+--keymap.set('n','<leader>ff',builtin.find_files,{desc='Telescope find files'})
+--keymap.set('n','<leader>fg',builtin.live_grep,{desc='Telescop live grep'})
 --nvim-tree
 keymap.set("n","<leader>e",":NvimTreeToggle<CR>")
 --窗口切换
