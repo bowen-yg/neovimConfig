@@ -1,7 +1,9 @@
 require("config.options")
 require("config.keymaps")
 require("config.lazy")
-
+require("config.lsp_set")
+require("config.cmp_set")
+require("config.autopairs_set")
 --lualine
 require("lualine").setup({
     options={theme="tokyonight"},
