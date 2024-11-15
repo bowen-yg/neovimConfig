@@ -1,5 +1,6 @@
 local npairs_ok, npairs = pcall(require, "nvim-autopairs")
 if not npairs_ok then
+  vim.notify("not found nvim-autopairs")
   return
 end
 
