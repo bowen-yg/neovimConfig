@@ -5,9 +5,9 @@ require("config.lsp_set")
 require("config.cmp_set")
 require("config.autopairs_set")
 --lualine
-require("lualine").setup({
+require("lualine").setup{
     options={theme="ayu_mirage"},
-})
+}
 vim.cmd.colorscheme 'catppuccin-mocha'
 
 

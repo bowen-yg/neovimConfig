@@ -16,11 +16,4 @@ require("mason-lspconfig").setup({
 })
 require("lspconfig").pyright.setup{}
 require("lspconfig").lua_ls.setup{}
---[[require("lspconfig.configs").ast_grep={
-    default_config={
-        cmd={"ast-grep","lsp"};
-        single_file_support=true;
-        root_dir = nvim_lspconfig.util.root_pattern('sgconfig.yml');
-    };
-}]]--
 require("lspconfig").clangd.setup{}
