@@ -1,6 +1,6 @@
 return{
     "nvim-treesitter/nvim-treesitter",
-    "p00f/nvim-ts-rainbow",
+    "HiPhish/rainbow-delimiters.nvim",
     build=":TSUpdate",
     config=function()
     local configs=require("nvim-treesitter.configs")
@@ -10,12 +10,7 @@ return{
         autopairs={enable=true,},
         highlight = { enable = true },
         indent = { enable = true },
-
-        rainbow={
-            enable=true,
-            extended_mode=true,
-            max_file_lines=nil,
-            }, 
         }
+    require('rainbow-delimiters.setup').setup{}
     end
 }

@@ -17,25 +17,18 @@ end
 -- setup() is also available as an alias
 require('lspkind').init({
     -- DEPRECATED (use mode instead): enables text annotations
-    --
     -- default: true
     -- with_text = true,
-
     -- defines how annotations are shown
     -- default: symbol
     -- options: 'text', 'text_symbol', 'symbol_text', 'symbol'
     mode = 'symbol_text',
-
     -- default symbol map
     -- can be either 'default' (requires nerd-fonts font) or
     -- 'codicons' for codicon preset (requires vscode-codicons font)
-    --
     -- default: 'default'
     preset = 'codicons',
-
     -- override preset symbols
-    --
-    -- default: {}
     symbol_map = {
       Text = "󰉿",
       Method = "󰆧",
@@ -104,7 +97,7 @@ formatting = {
     format = lspkind.cmp_format({
       --mode = 'symbol', -- show only symbol annotations
       maxwidth = {
-        menu = 80, -- leading text (labelDetails)
+        menu = 90, -- leading text (labelDetails)
         abbr = 30, -- actual suggestion item
       },
       ellipsis_char = '...', -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)

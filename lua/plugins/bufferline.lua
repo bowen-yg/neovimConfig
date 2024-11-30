@@ -5,7 +5,7 @@ return{
         options={
             offsets={{
                 filetype="NvimTree",
-                text="File Explorer",
+                text="File Tree",
                 text_align="left"
             }}
         }
