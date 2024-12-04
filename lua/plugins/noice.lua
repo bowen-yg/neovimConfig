@@ -12,7 +12,7 @@ return{
     --   If not available, we use `mini` as the fallback
     {"rcarriga/nvim-notify",
     opts={
-    	timeout=2000,
+    	timeout=2500,
     	render="compact",
     	max_width="50",
     	level=1
