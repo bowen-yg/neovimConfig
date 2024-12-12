@@ -14,7 +14,6 @@ local check_backspace = function()
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
--- setup() is also available as an alias
 require('lspkind').init({
     -- DEPRECATED (use mode instead): enables text annotations
     -- default: true
@@ -67,8 +66,8 @@ snippet = {
 },
 
 mapping = cmp.mapping.preset.insert({
-    ['K'] = cmp.mapping.select_prev_item(),
-    ['J'] = cmp.mapping.select_next_item(),
+    ['Up'] = cmp.mapping.select_prev_item(),
+    ['Down'] = cmp.mapping.select_next_item(),
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
