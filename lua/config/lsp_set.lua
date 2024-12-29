@@ -9,11 +9,11 @@ require("mason").setup({
 })
 require("mason-lspconfig").setup({
     ensure_installed={
-        "pyright",
+ --       "pyright",
         "lua_ls",
         "clangd",
     },
 })
-require("lspconfig").pyright.setup{}
+--require("lspconfig").pyright.setup{}
 require("lspconfig").lua_ls.setup{}
 require("lspconfig").clangd.setup{}

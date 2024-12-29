@@ -6,10 +6,10 @@ require("config.cmp_set")
 require("config.autopairs_set")
 --lualine
 require("lualine").setup{
-    options={theme="ayu_mirage"},
+    options = {
+    theme = 'dracula-nvim'}
 }
-vim.cmd.colorscheme 'catppuccin-mocha'
-
+vim.cmd.colorscheme 'dracula'
 
 --telescope
 local builtin=require('telescope.builtin')
